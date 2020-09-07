@@ -1,10 +1,7 @@
 package learn.algorithms;
 
-import com.sun.jmx.remote.internal.ArrayQueue;
-
-import java.util.ArrayDeque;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TestBinaryTree {
 
@@ -21,7 +18,7 @@ public class TestBinaryTree {
 //        postOrder(gen);
 
         int i =0, j =0;
-        ArrayQueue<BinaryNode> queue = new ArrayQueue<>(100);
+        List<BinaryNode> queue = new ArrayList<>(100);
         queue.add(gen);
         cengOrder(gen, queue, 0, 0);
         System.out.println(queue.size());
@@ -71,7 +68,7 @@ public class TestBinaryTree {
         }
     }
 
-    public static void cengOrder(BinaryNode node, ArrayQueue<BinaryNode> queue, int i, int j) {
+    public static void cengOrder(BinaryNode node, List<BinaryNode> queue, int i, int j) {
 
 //        System.out.println(queue.get(j));
         if (node.leftChild != null) {

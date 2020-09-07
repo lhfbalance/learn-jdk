@@ -27,7 +27,7 @@ public class NoExitSecurityManager extends SecurityManager {
         public final int status;
 
         public ExitException(int status) {
-            super("³É¹¦À¹½ØSystem.ext(0)£¡");
+            super("æˆåŠŸæ‹¦æˆªSystem.ext(0)ï¼");
             this.status = status;
         }
     }
